@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        .linkdestacadoscurso{
+            background-color: darkcyan;
+        }
+        a{
+            display: block;
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom-style: hidden;
+        }
+        table{
+            text-align: center;
+            border: none;
+            
+        }
+        td{
+            border: none;
+            
+        }
+        #contenedordor {
+            position: absolute;
+            left: 31px;
+            top: 65px;
+            width: 40px;
+            height: 649px;
+            z-index: 1;
+            padding-top: 100px;
+        }
+        
+    
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function() {
+       
+       // $("a[href='https://*']*").addClass(*link)
+        document.getElementById("cursos").addEventListener("click",resaltacurso,false);
+        document.getElementById("ejemplos").addEventListener("click",resaltaEjemplos,false);
+    });
+        
+        function resaltacurso(){
+            $(".ejemplos").removeClass(".linkdestacadoscurso");
+            
+            $("#cursos").addClass(".linkdestacadoscurso");
+       
+                    }
+        function resaltaEjemplos(){
+            $("#cursos").removeClass(".linkdestacadoscurso");
+
+       
+            $(".ejemplos").addClass(".linkdestacadoscurso");
+        }
+    </script>
+   
+</head>
+
+<body>
+   <div id="contenedor">
+       <a href="images.jpeg" target="_blank" class="cursos"> Fotos</a>
+       
+       <a href="https://fb.com" target="_blank" class="cursos"> Facebookl</a>
+       
+       <a href="https://google.com" target="_blank" class="cursos"> Google</a>
+       <a href="https://promandoGit.html" target="_blank" class="ejemplos">Proyectos Git</a>
+       <a href="https://jquerry1.html" target="_blank" class="ejemplos">Ejemplo1</a>
+       <a href="https://jquery3.html" target="_blank" class="ejemplos">Ejemplos2</a>
+       
+       <!-- <a href="https://jquery3.html" target="_blank" class="curso">Ejemplos2</a> -->
+       
+   </div>
+   
+   <table width="100%" border="1">
+   <tr>
+       <td>Curso destacados <input type="button"  value="cursos" id="cursos">
+       </td>
+       <td>
+           informacion Adicional<input type="button" value="informacion" class="ejemplos" >
+       </td>
+   </tr>
+</table>
+   
+    
+</body>
+</html>

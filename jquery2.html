@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    
+        #banner{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 40px;
+            top: 30px;
+            background: Red;
+            color: aliceblue;
+            text-align: center;
+        }
+        
+        #cerrar  {
+            width: 100px;
+            margin: 80px;
+            color: #fff;
+            font-size: 40px;
+            cursor: pointer;
+            text-align: center;
+            background: black;
+           
+        }
+        #sustitucion{
+            text-align: center;
+            float: left;
+            margin: 15px;
+            width: 350px;
+            font-size: 30px;
+            color: red;
+        }
+        
+    </style>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+    <script>
+    //Javascript nomal
+      $(document).ready(function(){
+      /*  var z=document.getElementById("cerrar");
+        z.addEventListener("click", cerrar_banner, false);
+
+//Con jquery
+       
+      document.getElementById("cerrar").addEventListener("click",cerrar_banner,false); */
+        
+          document.getElementById("imag3").addEventListener("click",carrito,false);
+        
+});
+       /* function cerrar_banner() {
+            
+            $("#banner").remove();
+        } */
+        
+        function carrito(){
+             $("#imag3").replaceWith("<div id='sustitucion'>Agregado al carro</div>");
+        }
+        
+    </script>
+    
+</head>
+
+<body>
+     
+     <div class="ima">
+         <img src="images.jpeg" id="imag1">
+         <img src="images.jpeg" id="imag2">
+    </div>
+
+        <div>
+         <img src="images.jpeg" id="imag3">
+         
+     </div>
+     
+   <!--   <div id="banner">
+          Banner de Prueba
+          <p id="cerrar"> cerrar  </p>
+      </div>  -->
+</body>
+</html>
