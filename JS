@@ -9,9 +9,9 @@
 <body>   
     			
 	<<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
-	alert(Hola Yosuñ?: DOMString); 
+	alert(Hola Emperator?: DOMString); 
 	</script>
 
-	 	<h1> Yosuñ </h1>
+	 	<h1>  Emperator! </h1>
 </body>
 </html>
